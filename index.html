@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Number Plate Detector</title>
+</head>
+<body style="text-align:center; background-color: aqua;">
+    <h2><b>Upload Vehicle Image</b></h2>
+
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="image" required>
+        <button type="submit" style="background-color: blanchedalmond; color: black;">Detect</button>
+    </form>
+
+    <h3 style="margin-top:20px;">Detected Number:</h3>
+    <h1>{{ plate_text }}</h1>
+</body>
+</html>
